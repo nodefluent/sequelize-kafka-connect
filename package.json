@@ -1,0 +1,30 @@
+{
+  "name": "sequelize-kafka-connect",
+  "version": "0.9.0",
+  "description": "kafka-connect connector for mysql,postgres and sqlite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodefluent/sequelize-kafka-connect.git"
+  },
+  "keywords": [
+    "kafka-connect",
+    "connector",
+    "mysql",
+    "postgres",
+    "sqlite",
+    "sequelize"
+  ],
+  "author": "Chris Froehlingsdorf <chris@5cf.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodefluent/sequelize-kafka-connect/issues"
+  },
+  "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
+  "dependencies": {
+    "kafka-connect": "^1.17.0"
+  }
+}
