@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "istanbul cover _mocha -- --recursive --timeout 12500 -R spec test/int && istanbul check-coverage --statements 80",
-        "test-ci": "istanbul cover _mocha --report lcovonly -- -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+        "test-ci": "istanbul cover _mocha --report lcovonly -- --timeout 12500 -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
     },
     "repository": {
         "type": "git",
