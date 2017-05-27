@@ -1,42 +1,7 @@
-# sequelize-kafka-connect
-Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
+"use strict";
 
-[![Build Status](https://travis-ci.org/nodefluent/sequelize-kafka-connect.svg?branch=master)](https://travis-ci.org/nodefluent/sequelize-kafka-connect)
+const path = require("path");
 
-[![Coverage Status](https://coveralls.io/repos/github/nodefluent/sequelize-kafka-connect/badge.svg?branch=master)](https://coveralls.io/github/nodefluent/sequelize-kafka-connect?branch=master)
-
-## info
-* not yet 100% done (almost :P)
-
-## install
-```
-npm install --save sequelize-kafka-connect
-```
-
-## use
-
-### database -> kafka
-
-```es6
-const { runSourceConnector } = require("sequelize-kafka-connect");
-runSourceConnector(config, [], onError).then(config => {
-    //runs forever until:
-    config.stop();
-});
-```
-
-### kafka -> database
-
-```es6
-const { runSinkConnector } = require("sequelize-kafka-connect");
-runSinkConnector(config, [], onError).then(config => {
-    //runs forever until:
-    config.stop();
-});
-```
-
-## config(uration)
-```es6
 const config = {
     kafka: {
         zkConStr: "localhost:2181/",
@@ -84,4 +49,5 @@ const config = {
         incrementingColumnName: "id"
     }
 };
-```
+
+module.exports = config;

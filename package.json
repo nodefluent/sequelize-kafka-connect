@@ -1,30 +1,43 @@
 {
-  "name": "sequelize-kafka-connect",
-  "version": "0.9.0",
-  "description": "kafka-connect connector for mysql,postgres and sqlite",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nodefluent/sequelize-kafka-connect.git"
-  },
-  "keywords": [
-    "kafka-connect",
-    "connector",
-    "mysql",
-    "postgres",
-    "sqlite",
-    "sequelize"
-  ],
-  "author": "Chris Froehlingsdorf <chris@5cf.de>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nodefluent/sequelize-kafka-connect/issues"
-  },
-  "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
-  "dependencies": {
-    "kafka-connect": "^1.17.0"
-  }
+    "name": "sequelize-kafka-connect",
+    "version": "0.10.0",
+    "description": "kafka-connect connector for mysql,postgres and sqlite",
+    "main": "index.js",
+    "scripts": {
+        "test": "istanbul cover _mocha -- --recursive --timeout 12500 -R spec test/int && istanbul check-coverage --statements 80",
+        "test-ci": "istanbul cover _mocha --report lcovonly -- -R spec test/unit && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nodefluent/sequelize-kafka-connect.git"
+    },
+    "keywords": [
+        "kafka-connect",
+        "connector",
+        "mysql",
+        "postgres",
+        "sqlite",
+        "sequelize"
+    ],
+    "author": "Chris Froehlingsdorf <chris@5cf.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nodefluent/sequelize-kafka-connect/issues"
+    },
+    "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
+    "dependencies": {
+        "kafka-connect": "^1.18.0",
+        "mysql2": "^1.2.0",
+        "pg": "^6.2.3",
+        "pg-hstore": "^2.3.2",
+        "sequelize": "^3.30.4",
+        "sqlite3": "^3.1.8",
+        "tedious": "^2.0.0"
+    },
+    "devDependencies": {
+        "istanbul": "~0.4.2",
+        "mocha": "~3.4.1",
+        "coveralls": "^2.13.1",
+        "mocha-lcov-reporter": "^1.3.0"
+    }
 }
