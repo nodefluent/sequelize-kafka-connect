@@ -47,7 +47,7 @@ const config = {
         user: null,
         password: null,
         maxPollCount: 50,
-        table: "accounts",
+        table: "accounts_import",
         incrementingColumnName: "id"
     }
 };
