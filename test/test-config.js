@@ -29,6 +29,9 @@ const config = {
     partitions: 1,
     maxTasks: 1,
     pollInterval: 2000,
+    produceKeyed: true,
+    produceVersion: 1,
+    produceCompressionType: 0,
     connector: {
         options: {
             host: "localhost",
