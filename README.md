@@ -1,5 +1,5 @@
 # sequelize-kafka-connect
-Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
+Node.js Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
 
 [![Build Status](https://travis-ci.org/nodefluent/sequelize-kafka-connect.svg?branch=master)](https://travis-ci.org/nodefluent/sequelize-kafka-connect)
 
@@ -64,6 +64,8 @@ const config = {
     partitions: 1,
     maxTasks: 1,
     pollInterval: 2000,
+    produceKeyed: true,
+    produceCompressionType: 0,
     connector: {
         options: {
             host: "localhost",

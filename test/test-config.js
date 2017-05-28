@@ -30,7 +30,6 @@ const config = {
     maxTasks: 1,
     pollInterval: 2000,
     produceKeyed: true,
-    produceVersion: 1,
     produceCompressionType: 0,
     connector: {
         options: {

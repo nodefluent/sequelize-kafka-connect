@@ -1,6 +1,6 @@
 {
     "name": "sequelize-kafka-connect",
-    "version": "0.10.0",
+    "version": "0.11.0",
     "description": "kafka-connect connector for mysql,postgres and sqlite",
     "main": "index.js",
     "scripts": {
