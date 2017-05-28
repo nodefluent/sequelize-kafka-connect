@@ -27,12 +27,12 @@ describe("Connector INT", function() {
             setTimeout(() => {
                 assert.ifError(error);
                 done();
-            }, 1500);
+            }, 4500);
         })
 
         it("should be able to close configuration", function(done) {
             config.stop();
-            setTimeout(done, 500);
+            setTimeout(done, 1500);
         });
     });
 
@@ -66,12 +66,12 @@ describe("Connector INT", function() {
             setTimeout(() => {
                 assert.ifError(error);
                 done();
-            }, 1500);
+            }, 4500);
         })
 
         it("should be able to close configuration", function(done) {
             config.stop();
-            setTimeout(done, 500);
+            setTimeout(done, 1500);
         });
 
         it("should see table data", function() {
