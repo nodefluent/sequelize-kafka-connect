@@ -66,8 +66,6 @@ const config = {
             fetchMaxWaitMs: 10,
             heartbeatInterval: 250,
             retryMinTimeout: 250,
-            autoCommit: true,
-            autoCommitIntervalMs: 1000,
             requireAcks: 0,
             //ackTimeoutMs: 100,
             //partitionerType: 3

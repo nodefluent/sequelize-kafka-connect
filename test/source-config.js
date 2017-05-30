@@ -1,11 +1,12 @@
 "use strict";
 
 const path = require("path");
+const Logger = require("log4bro");
 
 const config = {
     kafka: {
         zkConStr: "localhost:2181/",
-        logger: null,
+        logger: new Logger(),
         groupId: "kc-sequelize-test",
         clientName: "kc-sequelize-test-name",
         workerPerPartition: 1,
@@ -18,8 +19,6 @@ const config = {
             fetchMaxWaitMs: 10,
             heartbeatInterval: 250,
             retryMinTimeout: 250,
-            autoCommit: true,
-            autoCommitIntervalMs: 1000,
             requireAcks: 0,
             //ackTimeoutMs: 100,
             //partitionerType: 3
