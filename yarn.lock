@@ -1108,9 +1108,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-kafka-connect@^1.23.0:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/kafka-connect/-/kafka-connect-1.23.0.tgz#6683fcaf510296ae6faa1344773bedc88e506ea3"
+kafka-connect@^1.24.0:
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/kafka-connect/-/kafka-connect-1.24.0.tgz#068f807371c9513c7d1ef8c584b04af5226fd307"
   dependencies:
     async "^2.4.1"
     bluebird "^3.5.0"

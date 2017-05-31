@@ -20,6 +20,7 @@ describe("Connector INT", function() {
             };
             return runSourceConnector(sourceProperties, [], onError).then(_config => {
                 config = _config;
+                config.on("record-read", id => console.log("read: " + id));
                 return true;
             });
         });
@@ -68,6 +69,8 @@ describe("Connector INT", function() {
             };
             return runSinkConnector(sinkProperties, [], onError).then(_config => {
                 config = _config;
+                config.on("model-upsert", id => console.log("upsert: " + id));
+                config.on("model-delete", id => console.log("delete: " + id));
                 return true;
             });
         });
