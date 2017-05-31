@@ -10,6 +10,7 @@ const SequelizeSourceTask = require("./lib/source/SequelizeSourceTask.js");
 const SequelizeSinkTask = require("./lib/sink/SequelizeSinkTask.js");
 
 const JsonConverter = require("./lib/utils/JsonConverter.js");
+const ConverterFactory = require("./lib/utils/ConverterFactory.js");
 
 const runSourceConnector = (properties, converters = [], onError = null) => {
 
@@ -43,5 +44,6 @@ const runSinkConnector = (properties, converters = [], onError = null) => {
 
 module.exports = {
     runSourceConnector,
-    runSinkConnector
+    runSinkConnector,
+    ConverterFactory
 };
