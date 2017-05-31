@@ -2,6 +2,7 @@
 
 const assert = require("assert");
 const Sequelize = require("sequelize");
+const { SourceRecord } = require("kafka-connect");
 const { runSourceConnector, runSinkConnector } = require("./../../index.js");
 const sinkProperties = require("./../sink-config.js");
 const sourceProperties = require("./../source-config.js");
@@ -28,7 +29,16 @@ describe("Connector INT", function() {
                 assert.ifError(error);
                 done();
             }, 4500);
-        })
+        });
+
+        it("should be able to fake a delete action", function() {
+
+            const record = new SourceRecord();
+            record.key = "1";
+            record.value = null; //will cause this record to be deleted when read by sink-task
+
+            return config.produce(record);
+        });
 
         it("should be able to close configuration", function(done) {
             config.stop();
@@ -80,7 +90,7 @@ describe("Connector INT", function() {
             return sequelize.query(`SELECT * FROM ${table}`)
                 .then(([results]) => {
                     console.log(results);
-                    assert.equal(results.length, 2);
+                    assert.equal(results.length, 1);
                     sequelize.close();
                     return true;
                 });
