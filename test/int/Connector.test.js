@@ -153,8 +153,8 @@ describe("Connector INT", function() {
             sinkProperties.awaitRetry = 100;
             sinkProperties.haltOnError = true;
             sinkProperties.kafka.logger = {
-                debug: function(message) {console.debug(message)},
-                info: function(message) {console.info(message)},
+                debug: function(message) {console.log(message)},
+                info: function(message) {console.log(message)},
                 warn: function(message) {console.warn(message)},
                 error: function(message) {
                     errorMessages.push(message);
