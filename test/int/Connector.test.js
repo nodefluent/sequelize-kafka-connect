@@ -28,7 +28,7 @@ describe("Connector INT", function() {
                 assert.ifError(error);
                 done();
             }, 4500);
-        })
+        });
 
         it("should be able to close configuration", function(done) {
             config.stop();
@@ -67,7 +67,7 @@ describe("Connector INT", function() {
                 assert.ifError(error);
                 done();
             }, 4500);
-        })
+        });
 
         it("should be able to close configuration", function(done) {
             config.stop();
@@ -122,7 +122,7 @@ describe("Connector INT", function() {
                 assert.ifError(error);
                 done();
             }, 4500);
-        })
+        });
 
         it("should be able to close configuration", function(done) {
             config.stop();
@@ -173,6 +173,6 @@ describe("Connector INT", function() {
                 assert.equal(error, "Error: halting because of retry error.");
                 done();
             }, 8000);
-        })
+        });
     });
 });
