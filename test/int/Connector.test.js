@@ -151,6 +151,7 @@ describe("Connector INT", function() {
             sinkProperties.topic = brokenTopic;
             sinkProperties.maxRetries = 2;
             sinkProperties.awaitRetry = 100;
+            sinkProperties.haltOnError = true;
             sinkProperties.kafka.logger = {
                 debug: function(message) {console.debug(message)},
                 info: function(message) {console.info(message)},
@@ -169,7 +170,7 @@ describe("Connector INT", function() {
 
         it("should put valid messages and fail on erroneous message", function(done) {
             setTimeout(() => {
-                assert.ifError(error);
+                assert.equal(error, "Error: halting because of retry error.");
                 done();
             }, 8000);
         })
