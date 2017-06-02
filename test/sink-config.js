@@ -30,6 +30,8 @@ const config = {
     pollInterval: 2000,
     produceKeyed: true,
     produceCompressionType: 0,
+    awaitRetry: 2000,
+    maxRetries: 3,
     connector: {
         options: {
             host: "localhost",
