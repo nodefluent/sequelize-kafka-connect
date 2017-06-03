@@ -70,7 +70,7 @@ describe("Connector INT", function() {
             const onError = _error => {
                 error = _error;
             };
-            return runSinkConnector(sinkProperties, [], onError).then(_config => {
+            return runSinkConnector(Object.assign({}, sinkProperties, { enableMetrics: true }), [], onError).then(_config => {
                 config = _config;
                 config.on("model-upsert", id => console.log("upsert: " + id));
                 config.on("model-delete", id => console.log("delete: " + id));

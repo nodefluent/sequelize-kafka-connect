@@ -48,7 +48,12 @@ const config = {
         maxPollCount: 50,
         table: "accounts",
         incrementingColumnName: "id"
-    }
+    },
+    http: {
+        port: 3149,
+        middlewares: []
+    },
+    enableMetrics: false
 };
 
 module.exports = config;
