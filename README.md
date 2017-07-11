@@ -1,4 +1,6 @@
 # sequelize-kafka-connect
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nodefluent/sequelize-kafka-connect.svg)](https://greenkeeper.io/)
 Node.js Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
 
 [![Build Status](https://travis-ci.org/nodefluent/sequelize-kafka-connect.svg?branch=master)](https://travis-ci.org/nodefluent/sequelize-kafka-connect)
