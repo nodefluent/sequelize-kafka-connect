@@ -6,7 +6,7 @@ const Logger = require("log4bro");
 const config = {
     kafka: {
         //zkConStr: "localhost:2181/",
-        kafkaHost: "localhost:9092/",
+        kafkaHost: "localhost:9092",
         logger: new Logger(),
         groupId: "kc-sequelize-test",
         clientName: "kc-sequelize-test-name",

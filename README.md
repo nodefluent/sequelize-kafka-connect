@@ -105,7 +105,8 @@ nkc-sequelize-sink --help
 ```es6
 const config = {
     kafka: {
-        zkConStr: "localhost:2181/",
+        //zkConStr: "localhost:2181/",
+        kafkaHost: "localhost:9092",
         logger: null,
         groupId: "kc-sequelize-test",
         clientName: "kc-sequelize-test-name",
