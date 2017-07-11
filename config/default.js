@@ -4,7 +4,8 @@ const path = require("path");
 
 const config = {
     kafka: {
-        zkConStr: "localhost:2181/",
+        //zkConStr: "localhost:2181/",
+        kafkaHost: "localhost:9092/",
         logger: null,
         groupId: "kc-sequelize-group",
         clientName: "kc-sequelize-client",
