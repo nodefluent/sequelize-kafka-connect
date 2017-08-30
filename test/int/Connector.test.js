@@ -4,7 +4,7 @@ const assert = require("assert");
 const Sequelize = require("sequelize");
 const { SourceRecord } = require("kafka-connect");
 const uuid = require("uuid");
-const { Producer } = require("sinek");
+const { NProducer } = require("sinek");
 
 const { runSourceConnector, runSinkConnector, ConverterFactory } = require("./../../index.js");
 const sinkProperties = require("./../sink-config.js");
@@ -42,6 +42,10 @@ describe("Connector INT", function() {
             record.value = null; //will cause this record to be deleted when read by sink-task
 
             return config.produce(record);
+        });
+
+        it("should await produce of single record", function(done){
+            setTimeout(done, 1500);
         });
 
         it("should be able to close configuration", function(done) {
@@ -188,7 +192,7 @@ describe("Connector INT", function() {
         });
 
         it("should be able to produce a few messages", function() {
-            producer = new Producer(sinkProperties.kafka, topic, 1);
+            producer = new NProducer(sinkProperties.kafka, topic, 1);
             return producer.connect().then(_ => {
                 return Promise.all([
                     producer.buffer(topic, "3", { payload: { id: 3, name: "test1" }, type: "publish" }),
@@ -287,9 +291,9 @@ describe("Connector INT", function() {
         });
 
         it("should produce the erroneous message", function(done) {
-            const {Producer} = require("sinek");
+
             const partitions = 1;
-            const producer = new Producer(sourceProperties.kafka, [brokenTopic]);
+            const producer = new NProducer(sourceProperties.kafka, [brokenTopic]);
             producer.on("error", error => {
                 console.error(error);
                 return done();

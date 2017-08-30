@@ -1,9 +1,11 @@
 "use strict";
 
 const path = require("path");
-const Logger = require("log4bro");
+//const Logger = require("log4bro");
 
 const config = {
+
+    /*
     kafka: {
         //zkConStr: "localhost:2181/",
         kafkaHost: "localhost:9092",
@@ -24,7 +26,20 @@ const config = {
             //ackTimeoutMs: 100,
             //partitionerType: 3
         }
+    }, */
+
+    kafka: {
+        noptions: {
+            "client.id": "kcs-test",
+            "metadata.broker.list": "localhost:9092",
+            //"debug": "all",
+            "event_cb": true
+        },
+        tconf: {
+            "request.required.acks": 1
+        }
     },
+
     topic: "sc_test_topic",
     partitions: 1,
     maxTasks: 1,
