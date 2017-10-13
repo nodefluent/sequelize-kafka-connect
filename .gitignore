@@ -60,3 +60,5 @@ typings/
 .idea/
 .vscode/
 logs/
+
+*.sqlite
