@@ -31,7 +31,7 @@
     "dependencies": {
         "commander": "~2.15.1",
         "kafka-connect": "~3.4.0",
-        "mysql2": "~1.5.3",
+        "mysql2": "~1.6.0",
         "pg": "~7.4.3",
         "pg-hstore": "~2.3.2",
         "sequelize": "~4.38.0",
