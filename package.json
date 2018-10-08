@@ -29,7 +29,7 @@
     },
     "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
     "dependencies": {
-        "commander": "~2.18.0",
+        "commander": "~2.19.0",
         "kafka-connect": "~3.5.0",
         "mysql2": "~1.6.1",
         "pg": "~7.4.3",
