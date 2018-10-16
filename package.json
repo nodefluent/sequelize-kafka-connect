@@ -1,11 +1,12 @@
 {
     "name": "sequelize-kafka-connect",
-    "version": "3.5.0",
+    "version": "3.6.0",
     "description": "kafka-connect connector for mysql,postgres and sqlite",
     "main": "index.js",
     "scripts": {
         "test": "istanbul cover _mocha -- --recursive --exit --timeout 12500 -R spec test/int && istanbul check-coverage --statements 80",
-        "test-ci": "istanbul cover _mocha --report lcovonly -- --exit --timeout 12500 -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+        "test-ci": "istanbul cover _mocha --report lcovonly -- --exit --timeout 12500 -R spec test/int && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+        "yarn:openssl": "LDFLAGS='-L/usr/local/opt/openssl/lib' CPPFLAGS='-I/usr/local/opt/openssl/include' yarn"
     },
     "repository": {
         "type": "git",
@@ -29,12 +30,12 @@
     },
     "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
     "dependencies": {
-        "commander": "~2.18.0",
-        "kafka-connect": "~3.5.0",
+        "commander": "~2.19.0",
+        "kafka-connect": "~3.6.0",
         "mysql2": "~1.6.1",
-        "pg": "~7.4.3",
+        "pg": "~7.5.0",
         "pg-hstore": "~2.3.2",
-        "sequelize": "~4.38.0",
+        "sequelize": "~4.39.1",
         "sequelize-auto": "~0.4.29",
         "sqlite3": "~4.0.2",
         "tedious": "~2.6.4"
