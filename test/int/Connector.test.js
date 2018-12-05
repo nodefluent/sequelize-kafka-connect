@@ -304,7 +304,7 @@ describe("Connector INT", function() {
                 .then(() => done());
         });
 
-        it("should be able to run sequelize sink config", function() {
+        xit("should be able to run sequelize sink config", function() {
             const onError = _error => {
                 error = _error;
             };
@@ -329,7 +329,7 @@ describe("Connector INT", function() {
             });
         });
 
-        it("should put valid messages and fail on erroneous message", function(done) {
+        xit("should put valid messages and fail on erroneous message", function(done) {
             setTimeout(() => {
                 assert.equal(error, "Error: halting because of retry error.");
                 done();
