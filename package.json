@@ -1,6 +1,6 @@
 {
     "name": "sequelize-kafka-connect",
-    "version": "3.6.1",
+    "version": "3.7.0",
     "description": "kafka-connect connector for mysql,postgres and sqlite",
     "main": "index.js",
     "scripts": {
@@ -31,11 +31,11 @@
     "homepage": "https://github.com/nodefluent/sequelize-kafka-connect#readme",
     "dependencies": {
         "commander": "~2.19.0",
-        "kafka-connect": "~3.6.0",
+        "kafka-connect": "~3.7.0",
         "mysql2": "~1.6.4",
         "pg": "~7.7.1",
         "pg-hstore": "~2.3.2",
-        "sequelize": "~4.41.2",
+        "sequelize": "~4.42.0",
         "sequelize-auto": "~0.4.29",
         "sqlite3": "~4.0.4",
         "tedious": "~3.0.1"
