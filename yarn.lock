@@ -3530,7 +3530,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.6.0, semver@^5.7.0:
+"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.7.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
@@ -3544,6 +3544,11 @@ semver@^6.0.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.1.tgz#53f53da9b30b2103cd4f15eab3a18ecbcb210c9b"
   integrity sha512-rWYq2e5iYW+fFe/oPPtYJxYgjBm8sC4rmoGdUOgBB7VnwKt6HrL793l2voH1UlsyYZpJ4g0wfjnTEO1s1NP2eQ==
+
+semver@^6.1.1:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.2.0.tgz#4d813d9590aaf8a9192693d6c85b9344de5901db"
+  integrity sha512-jdFC1VdUGT/2Scgbimf7FSx9iJLXoqfglSF+gJeuNWVpiE37OIbc1jywR/GJyFdz3mnkz2/id0L0J/cr0izR5A==
 
 send@0.16.2:
   version "0.16.2"
@@ -3581,10 +3586,10 @@ sequelize-auto@~0.4.29:
     sequelize "^3.30.2"
     yargs "^8.0.1"
 
-sequelize-pool@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-2.1.0.tgz#cbab1c1872c37e531743e811e0672317ab9e9b84"
-  integrity sha512-NDy4qJPxm6+i7FEQqAsJPKVmKLOgorQJ5fYxrTNmvhb3QAbC5nAUxftiIOKQCyYXhWSgPBlDw7eJQozavmq45g==
+sequelize-pool@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-2.3.0.tgz#64f1fe8744228172c474f530604b6133be64993d"
+  integrity sha512-Ibz08vnXvkZ8LJTiUOxRcj1Ckdn7qafNZ2t59jYHMX1VIebTAOYefWdRYFt6z6+hy52WGthAHAoLc9hvk3onqA==
 
 sequelize@^3.30.2:
   version "3.35.1"
@@ -3608,10 +3613,10 @@ sequelize@^3.30.2:
     validator "^5.2.0"
     wkx "0.2.0"
 
-sequelize@~5.8.11:
-  version "5.8.11"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.11.tgz#f429e57da0512d74f88f1c1e90ac93bcd9e96a2d"
-  integrity sha512-liaJWsXBxB1GUqUMNudX0eh8N7Rb5oTQcKdE6UZnW6efumkEU96BzGQvk3SXonaJs4KlfG7Zm8kozLjv3nXTiQ==
+sequelize@~5.9.1:
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.9.1.tgz#11a5da77c0bc5179bf85b3324b4d761cf89f4acc"
+  integrity sha512-3vGl4zKWh+J0nMeH7UEy1Puxg6H4rpTnD2ilP3EFPWvL9ynm/f5ClJKkfkl7y1gReIiWV6QXB8iEREyxxwUcDA==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
@@ -3622,8 +3627,8 @@ sequelize@~5.8.11:
     moment "^2.24.0"
     moment-timezone "^0.5.21"
     retry-as-promised "^3.1.0"
-    semver "^5.6.0"
-    sequelize-pool "^2.1.0"
+    semver "^6.1.1"
+    sequelize-pool "^2.3.0"
     toposort-class "^1.0.1"
     uuid "^3.2.1"
     validator "^10.11.0"
