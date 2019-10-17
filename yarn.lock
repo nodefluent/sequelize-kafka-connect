@@ -2317,6 +2317,11 @@ lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
+lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
 log-driver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8"
@@ -3457,7 +3462,7 @@ retry-as-promised@^2.0.0:
     bluebird "^3.4.6"
     debug "^2.6.9"
 
-retry-as-promised@^3.1.0:
+retry-as-promised@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/retry-as-promised/-/retry-as-promised-3.2.0.tgz#769f63d536bec4783549db0777cb56dadd9d8543"
   integrity sha512-CybGs60B7oYU/qSQ6kuaFmRd9sTZ6oXSc0toqePvV74Ac6/IFZSI1ReFQmtCN+uvW1Mtqdwpvt/LGOiCBAY2Mg==
@@ -3530,7 +3535,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.6.0, semver@^5.7.0:
+"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.7.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
@@ -3544,6 +3549,11 @@ semver@^6.0.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.1.tgz#53f53da9b30b2103cd4f15eab3a18ecbcb210c9b"
   integrity sha512-rWYq2e5iYW+fFe/oPPtYJxYgjBm8sC4rmoGdUOgBB7VnwKt6HrL793l2voH1UlsyYZpJ4g0wfjnTEO1s1NP2eQ==
+
+semver@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
+  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 send@0.16.2:
   version "0.16.2"
@@ -3581,10 +3591,10 @@ sequelize-auto@~0.4.29:
     sequelize "^3.30.2"
     yargs "^8.0.1"
 
-sequelize-pool@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-2.1.0.tgz#cbab1c1872c37e531743e811e0672317ab9e9b84"
-  integrity sha512-NDy4qJPxm6+i7FEQqAsJPKVmKLOgorQJ5fYxrTNmvhb3QAbC5nAUxftiIOKQCyYXhWSgPBlDw7eJQozavmq45g==
+sequelize-pool@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-2.3.0.tgz#64f1fe8744228172c474f530604b6133be64993d"
+  integrity sha512-Ibz08vnXvkZ8LJTiUOxRcj1Ckdn7qafNZ2t59jYHMX1VIebTAOYefWdRYFt6z6+hy52WGthAHAoLc9hvk3onqA==
 
 sequelize@^3.30.2:
   version "3.35.1"
@@ -3608,26 +3618,26 @@ sequelize@^3.30.2:
     validator "^5.2.0"
     wkx "0.2.0"
 
-sequelize@~5.8.11:
-  version "5.8.11"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.11.tgz#f429e57da0512d74f88f1c1e90ac93bcd9e96a2d"
-  integrity sha512-liaJWsXBxB1GUqUMNudX0eh8N7Rb5oTQcKdE6UZnW6efumkEU96BzGQvk3SXonaJs4KlfG7Zm8kozLjv3nXTiQ==
+sequelize@~5.19.8:
+  version "5.19.8"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.19.8.tgz#9030d9cfd60eb1090af526c16eb85b1288b9e000"
+  integrity sha512-PeI40+HQFQkDleFh1oIfOoalCCq4lePps+sUegNJMEzmy1UT5PsE5ob8Ljon9vOtMouqcWJ6OPS1GwFIaPEuaA==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
     debug "^4.1.1"
     dottie "^2.0.0"
     inflection "1.12.0"
-    lodash "^4.17.11"
+    lodash "^4.17.15"
     moment "^2.24.0"
     moment-timezone "^0.5.21"
-    retry-as-promised "^3.1.0"
-    semver "^5.6.0"
-    sequelize-pool "^2.1.0"
+    retry-as-promised "^3.2.0"
+    semver "^6.3.0"
+    sequelize-pool "^2.3.0"
     toposort-class "^1.0.1"
-    uuid "^3.2.1"
+    uuid "^3.3.3"
     validator "^10.11.0"
-    wkx "^0.4.6"
+    wkx "^0.4.8"
 
 serve-static@1.13.2:
   version "1.13.2"
@@ -4188,6 +4198,11 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.2.1, uuid@^3.3.2, uuid@~3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
+uuid@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
+  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -4259,10 +4274,10 @@ wkx@0.2.0:
   resolved "https://registry.yarnpkg.com/wkx/-/wkx-0.2.0.tgz#76c24f16acd0cd8f93cd34aa331e0f7961256e84"
   integrity sha1-dsJPFqzQzY+TzTSqMx4PeWElboQ=
 
-wkx@^0.4.6:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/wkx/-/wkx-0.4.7.tgz#ba0e4f9e785e95c9975856c1834f19a95c65cfb5"
-  integrity sha512-pHf546L96TK8RradLt1cWaIffstgv/zXZ14CGz5KnBs1AxBX0wm+IDphjJw0qrEqRv8P9W9CdTt8Z1unMRZ19A==
+wkx@^0.4.8:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/wkx/-/wkx-0.4.8.tgz#a092cf088d112683fdc7182fd31493b2c5820003"
+  integrity sha512-ikPXMM9IR/gy/LwiOSqWlSL3X/J5uk9EO2hHNRXS41eTLXaUFEVw9fn/593jW/tE5tedNg8YjT5HkCa4FqQZyQ==
   dependencies:
     "@types/node" "*"
 
