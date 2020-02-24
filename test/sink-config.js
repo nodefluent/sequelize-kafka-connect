@@ -32,6 +32,7 @@ const config = {
         noptions: {
             "metadata.broker.list": "localhost:9092",
             "group.id": "n-test-group",
+            "client.id": "kcs-test",
             "enable.auto.commit": false,
             "debug": "all",
             "event_cb": true

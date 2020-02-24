@@ -1,6 +1,5 @@
 # sequelize-kafka-connect
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/nodefluent/sequelize-kafka-connect.svg)](https://greenkeeper.io/)
 Node.js Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
 
 [![Build Status](https://travis-ci.org/nodefluent/sequelize-kafka-connect.svg?branch=master)](https://travis-ci.org/nodefluent/sequelize-kafka-connect)
@@ -12,6 +11,20 @@ Node.js Kafka Connect connector for MySQL, Postgres, SQLite and MSSQL databases
 ```
 npm install --save sequelize-kafka-connect
 ```
+
+## A note on native mode
+
+If you are using the native mode (`config: { noptions: {} }`).
+You will have to manually install `node-rdkafka` alongside kafka-connect.
+(This requires a Node.js version between 9 and 12 and will not work with Node.js >= 13, last tested with 12.16.1)
+
+On Mac OS High Sierra / Mojave:
+`CPPFLAGS=-I/usr/local/opt/openssl/include LDFLAGS=-L/usr/local/opt/openssl/lib yarn add --frozen-lockfile node-rdkafka@2.7.4`
+
+Otherwise:
+`yarn add --frozen-lockfile node-rdkafka@2.7.4`
+
+(Please also note: Doing this with npm does not work, it will remove your deps, `npm i -g yarn`)
 
 ### database -> kafka
 

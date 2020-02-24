@@ -31,6 +31,7 @@ const config = {
     kafka: {
         noptions: {
             "client.id": "kcs-test",
+            "group.id": "n-test-group",
             "metadata.broker.list": "localhost:9092",
             //"debug": "all",
             "event_cb": true

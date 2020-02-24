@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - "12"
 env:
   global:
   - ZOOKEEPER_PEERS=localhost:2181
@@ -17,8 +17,12 @@ before_install:
 - kafka/bin/kafka-topics.sh --create --partitions 1 --replication-factor 1 --topic sc_test_topic --zookeeper localhost:2181
 - kafka/bin/kafka-topics.sh --create --partitions 1 --replication-factor 1 --topic sc_test_topic_2 --zookeeper localhost:2181
 - sleep 2
+
 script:
-  - npm run test-ci
+  - rm -rf node_modules
+  - yarn
+  - yarn add --frozen-lockfile node-rdkafka@2.7.4
+  - yarn test-ci
  
 addons:
   apt:
